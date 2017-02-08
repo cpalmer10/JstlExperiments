@@ -14,9 +14,14 @@
     </head>
     <body>
         <c:set var="names" value="${['Chris Palmer', 'Will Boyer', 'Joshua Strait', 'Carson Schultz', 'Chris Roller']}" />
-        <c:forEach var="i" begin="0" end="${names}">
-            Hello, <c:out value="${names}"/>            
-        </c:forEach>        
+        <table>
+            <c:forEach items="${names}" var="current">
+                <tr>
+                    <td>Hello, <c:out value="${current}"/></td>   
+                </tr>                
+            </c:forEach>             
+        </table>
+               
                
                
             
